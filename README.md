@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# Loan Application System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application allows users to fill out and submit loan forms and view the status of their submissions. Administrators have additional capabilities to view all loan applications and approve or deny them.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User**
+  - Fill out a loan application form and submit it.
+  - View the status of all submitted loan applications.
 
-## Expanding the ESLint configuration
+- **Admin**
+  - View the list of all loan applications.
+  - Approve or deny loan applications with a single click.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technology Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **Frontend**
+  - React
+  - Axios
+  - Chakra UI
+- **Backend**
+  - Node.js
+  - Express
+  - SQLite
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Clone the front end repository**
+
+   ```bash
+   git clone https://github.com/LoudShrimp/cds_app.git
+   cd cds_app
+
+2. **Clone the back end repository repository**
+
+   ```bash
+   git clone https://github.com/LoudShrimp/cds_backend.git
+   cd cds_backend.git
+
+3. **Install dependencies**
+
+   Navigate to the backend and frontend directories and install the required dependencies via 'npm install'
+
+4. **Run the backend server**
+
+   Navigate to the backend directory and run the backend server via 'node server.js'
+
+5. **Run the frontend server**
+
+   Navigate to the frontend directory and run the frontend server via 'npm run dev'
